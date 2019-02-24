@@ -29,7 +29,28 @@ You need to use the `»` char to 'prevent' that path segment from being truncate
 
 ## Installation
 
-Copy the static binary: `TODO!!! ???`
+### Configuration 
+
+Add such a file at `$XDG_CONFIG_HOME/sodiumSierraStrawberry/config.json`
+```
+[
+  [
+    "/home/chris"
+  , "~"
+  ],
+  [
+    "/home/chris/Projects"
+  , "»Projects"
+  ]
+]
+```
+
+Copy the static binary (if you trust me!):
+
+```
+wget https://github.com/chrissound/SodiumSierraStrawberry/releases/download/v1/sodiumSierraStrawberry
+mv sodiumSierraStrawberry ~/.local/bin/
+```
 
 ### Wtf no, I'll compile it myself.
 

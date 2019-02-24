@@ -1,0 +1,34 @@
+executable:
+  source-dirs: src
+  main: Prompt
+  ghc-options: -Wall -O2 -static -threaded
+  cc-options: -static
+  ld-options: -static -pthread
+build-type: Simple
+maintainer: Chris Stryczynski
+dependencies:
+- base
+- split
+- aeson
+- bytestring
+- stm
+- text
+- time
+- thyme
+- directory
+- pretty-simple
+- string-conversions
+- optparse-applicative
+- directory
+- filepath
+- time
+- MissingH
+- safe
+name: sodiumSierraStrawberry
+version: '0.1.0.0'
+extra-source-files: ChangeLog.md
+author: Chris Stryczynski
+license: BSD3
+default-extensions: 
+  - LambdaCase
+license-file: LICENSE
