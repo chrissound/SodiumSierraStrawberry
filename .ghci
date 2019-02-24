@@ -1,0 +1,5 @@
+System.IO.hSetEncoding System.IO.stdout System.IO.utf8
+:set -Wall
+:set -Wno-type-defaults
+--:set args / --limit 300
+:set args /home/chris/Projects/Haskell/Wtf/ --limit 300

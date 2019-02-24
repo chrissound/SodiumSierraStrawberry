@@ -1,0 +1,43 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 88935acecc62ff182c52a90b6345d80caf254218cb349bf06efaa84f3ab5bb72
+
+name:           sodiumSierraStrawberry
+version:        0.1.0.0
+author:         Chris Stryczynski
+maintainer:     Chris Stryczynski
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    ChangeLog.md
+
+executable sodiumSierraStrawberry
+  main-is: Prompt.hs
+  other-modules:
+      Paths_sodiumSierraStrawberry
+  hs-source-dirs:
+      src
+  default-extensions: LambdaCase
+  ghc-options: -main-is Prompt
+  build-depends:
+      MissingH
+    , aeson
+    , base
+    , bytestring
+    , directory
+    , filepath
+    , optparse-applicative
+    , pretty-simple
+    , safe
+    , split
+    , stm
+    , string-conversions
+    , text
+    , thyme
+    , time
+  default-language: Haskell2010
