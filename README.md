@@ -1,17 +1,30 @@
-# New Haskell Project Bootstrap
+# SodiumSierraStrawberry
 
 ## What problem does this solve?
-Eliminates the need for the tedious `cabal init` as well creating the usefull files relating to `.ghci` etc.
+It makes it easier to read a lang path.
 
-## Instructions
+It does this by applying two types of transformations:
+- search and replace (these are set in `$XDG_CONFIG_HOME/sodiumSierraStrawberry/config.json` - aka `~/.config/sodiumSierraStrawberry`)
+- intelligent(?) directory truncation
 
-Git clone this project, and run the following command (you'll need to modify the source and destination) in the directory of the new project:
-```
-git@github.com:chrissound/newHaskellProjectBootstrap.git /example/path/changeme
-cd /example/path/changeme2
-rsync -av --progress /example/path/changeme . --exclude .git  --exclude README.md && git init
-```
+### Examples: 
 
-## Bonus
+From: `/home/sodium/Projects/Personal/Sierra`
+To: `»Projects/Sierra`
 
-You can use the the `ghcid.sh` script to start a ghcid session. 
+From: `/home/sodium/Projects/Personal/Sierra/Super/Long/Path/HolyAvacado`
+To: `»Projects/Sie…/Sup…/Lon…/Pat…/HolyAvacado/`
+
+## What are the limitations?
+
+You need to use the `»` char to 'prevent' that path segment from being truncated. It's hardcoded!
+
+## Installation
+
+Copy the static binary: `TODO!!! ???`
+
+### Wtf no, I'll compile it myself.
+
+You'll need to know how to compile Haskell projects:
+
+`stack install`
