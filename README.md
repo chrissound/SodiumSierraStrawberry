@@ -10,9 +10,13 @@ It does this by applying two types of transformations:
 ### Examples: 
 
 From: `/home/sodium/Projects/Personal/Sierra`
+
 To: `»Projects/Sierra`
 
+---
+
 From: `/home/sodium/Projects/Personal/Sierra/Super/Long/Path/HolyAvacado`
+
 To: `»Projects/Sie…/Sup…/Lon…/Pat…/HolyAvacado/`
 
 ## What are the limitations?
