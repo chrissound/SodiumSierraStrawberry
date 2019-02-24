@@ -27,6 +27,14 @@ To: `»Projects/Sie…/Sup…/Lon…/Pat…/HolyAvacado/`
 
 You need to use the `»` char to 'prevent' that path segment from being truncated. It's hardcoded!
 
+## How do I execute it?
+
+`sodiumSierraStrawberry /your/path/goes/here/example --limit 20`
+
+The above should output:
+
+`/you…/pat…/goe…/her…/example/`
+
 ## Installation
 
 ### Configuration 
