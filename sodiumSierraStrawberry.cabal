@@ -1,11 +1,10 @@
-cabal-version: 1.12
-
--- This file has been generated from package.yaml by hpack version 0.31.1.
+-- This file has been generated from package.static.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 88935acecc62ff182c52a90b6345d80caf254218cb349bf06efaa84f3ab5bb72
+-- hash: dc5d80120403b39adcd93487e3eb7b084fcc8abb48bc9c23eaaa9dbc7c48cb06
 
+cabal-version:  >= 1.10
 name:           sodiumSierraStrawberry
 version:        0.1.0.0
 author:         Chris Stryczynski
@@ -23,7 +22,9 @@ executable sodiumSierraStrawberry
   hs-source-dirs:
       src
   default-extensions: LambdaCase
-  ghc-options: -main-is Prompt
+  ghc-options: -Wall -O2 -static -threaded -main-is Prompt
+  cc-options: -static
+  ld-options: -static -pthread
   build-depends:
       MissingH
     , aeson
