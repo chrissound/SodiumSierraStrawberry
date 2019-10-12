@@ -5,7 +5,7 @@
 mkDerivation {
   pname = "sodiumSierraStrawberry";
   version = "0.1.0.0";
-  src = ./.;
+  src = builtins.path { path = ./.; name = "source"; };
   isLibrary = false;
   isExecutable = true;
   libraryToolDepends = [ hpack ];
